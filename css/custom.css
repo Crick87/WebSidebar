@@ -1,15 +1,14 @@
 .sidebar-nav {
-    background: #212529;
 }
 .sidebar-nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    background: #343a40;
+    background: #efefef;
 }
 
 .sidebar-nav .metismenu {
-    background: #212529;
+    background: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -48,7 +47,7 @@
     position: relative;
     display: block;
     padding: 13px 15px;
-    color: #adb5bd;
+    color: #546e7a;
     outline-width: 0;
     transition: all .3s ease-out;
 }
@@ -66,5 +65,13 @@
 .sidebar-nav .metismenu a:active {
     color: #f8f9fa;
     text-decoration: none;
-    background: #0b7285;
+    background: #2196f3;
+}
+
+
+.sidebar{
+    background: #fff;
+    -webkit-box-shadow: 2px 0px 11px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 0px 11px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 0px 11px 0px rgba(0,0,0,0.5);
 }
