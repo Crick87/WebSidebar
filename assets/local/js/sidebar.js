@@ -30,6 +30,7 @@ $(function() {
     //         e = e.parent().addClass("in").parent().addClass("active")
     //     }
     // }), 
+
     
     // Set metismenu to sidebarnav
     $(function() {

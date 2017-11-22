@@ -1,14 +1,9 @@
-body{
-    background-color: #f7f7f7;
-}
 /*******************
  Topbar
 *******************/
 .topbar {
     position: relative;
     z-index: 50;
-    -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .topbar .top-navbar {
     min-height: 70px;
@@ -39,9 +34,6 @@ body{
 .topbar .top-navbar .navbar-nav > .nav-item.show {
     background: rgba(0, 0, 0, 0.05);
 }
-.navbar-light .navbar-nav .nav-link {
-    color: #fff !important;
-}
 /* Shrink logo on mini-sidebar */
 .mini-sidebar .top-navbar .navbar-header {
     width: 60px;
@@ -57,7 +49,6 @@ Main sidebar
     top: 0px;
     z-index: 20;
     padding-top: 70px;
-    background: #fff;
     -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
 }
@@ -74,7 +65,6 @@ Sidebar navigation
     display: block;
 }
 .sidebar-nav {
-    background: #fff;
     padding: 15px;
 }
 .sidebar-nav ul {
@@ -85,7 +75,6 @@ Sidebar navigation
     list-style: none;
 }
 .sidebar-nav ul li a {
-    color: #607d8b;
     padding: 8px 35px 8px 15px;
     display: block;
     font-size: 15px;
@@ -94,23 +83,14 @@ Sidebar navigation
 }
 .sidebar-nav ul li a.active,
 .sidebar-nav ul li a:hover {
-    color: #26c6da;
     text-decoration:none; 
-}
-.sidebar-nav ul li>a.has-arrow:hover::after,
-.sidebar-nav ul li.active>a.has-arrow::after{
-    border-color: #26c6da;
-}
-.sidebar-nav ul li.active>a.has-arrow:hover::after,
-.sidebar-nav ul li.active>a.has-arrow::after{
-    border-color: #fff;
 }
 .sidebar-nav ul li a.active {
     font-weight: 500;
-    color: #263238;
 }
 .sidebar-nav ul li ul {
     padding-left: 5px;
+    padding-right: 5px;
     padding-top: 10px;
 }
 .sidebar-nav ul li ul li a {
@@ -136,21 +116,7 @@ Sidebar navigation
     margin-bottom: 10px;
 }
 .sidebar-nav > ul > li.active > a {
-    background-color: #26c6da;
-    color: #fff;
     font-weight: 500;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.sidebar-nav > ul > li.active > a i {
-    color: #fff;
-}
-.sidebar-nav > ul > li > a.active i,
-.sidebar-nav > ul > li > a:hover i {
-    color: #26c6da;
-}
-.sidebar-nav > ul > li.active > a:hover i {
-    color: #fff;
 }
 .sidebar-nav > ul > li > a i {
     width: 27px;
@@ -159,7 +125,6 @@ Sidebar navigation
     line-height: 27px;
     display: inline-block;
     vertical-align: middle;
-    color: #99abb4;
 }
 .sidebar-nav > ul > li > a .label {
     float: right;
@@ -167,8 +132,6 @@ Sidebar navigation
 }
 .sidebar-nav > ul > li > a.active {
     font-weight: 400;
-    background: #fff;
-    color: #26c6da;
 }
 .sidebar-nav .has-arrow {
     position: relative;
@@ -180,7 +143,6 @@ Sidebar navigation
     height: .55em;
     border-width: 1px 0 0 1px;
     border-style: solid;
-    border-color: #607d8b;
     right: 1em;
     -webkit-transform: rotate(-45deg) translate(0, -50%);
     -ms-transform: rotate(-45deg) translate(0, -50%);
@@ -218,7 +180,6 @@ When click on sidebar toggler and also for tablet
         top: 45px;
         width: 200px;
         z-index: 1001;
-        background: #f2f6f8;
         display: none;
         padding-left: 1px;
     }
@@ -265,21 +226,9 @@ When click on sidebar toggler and also for tablet
     }
     .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a {
         width: 260px;
-        background: #26c6da;
-        color: #ffffff;
-        border-color: #009efb;
-    }
-    .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a i {
-        color: #ffffff;
     }
     .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a .hide-menu {
         display: inline;
-    }
-    .mini-sidebar .sidebar-nav #sidebarnav > li.active > a {
-        border-color: transparent;
-    }
-    .mini-sidebar .sidebar-nav #sidebarnav > li.active > a.active {
-        border-color: #009efb;
     }
 }
 @media (max-width: 767px) {
@@ -488,5 +437,89 @@ Bootstrap 4 hack
     .mini-sidebar .page-wrapper {
         margin-left: 0px;
         padding-top: 70px;
+    }
+}
+
+/*=============================================================
+ Color scheme
+ ============================================================== */
+
+/* BODY */
+/* Page background */
+body{
+    background-color: #f7f7f7;
+}
+
+/* TOPBAR */
+/* Topbar shadow */
+.topbar {
+    -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+}
+/* Links in top navbar and toggler */
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+/* SIDEBAR */
+/* Sidebar background */
+.left-sidebar,
+.sidebar-nav {
+    background: #fff;
+}
+/* Sidebar items Color */
+.sidebar-nav ul li a,
+.sidebar-nav > ul > li > a i,
+.sidebar-nav .has-arrow::after {
+    color: #607d8b;
+}
+/* Sidebar items Hover color*/
+.sidebar-nav ul li a:hover,
+.sidebar-nav > ul > li > a:hover i,
+.sidebar-nav .has-arrow:hover::after {
+    color: #26c6da;
+}
+/* Sidebar items Active color*/
+.sidebar-nav ul li.active > a,
+.sidebar-nav > ul > li.active > a i,
+.sidebar-nav li.active > .has-arrow::after,
+.sidebar-nav ul li > a:focus,
+.sidebar-nav > ul > li > a:focus i,
+.sidebar-nav li > .has-arrow:focus::after {
+    color: #fff;
+}
+/* Sidebar Active background color and outline shadow */
+.sidebar-nav ul li.active > a,
+.sidebar-nav ul li > a:focus {
+    background-color: #26c6da;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Sidebar submenú background color and Radius */
+.sidebar-nav li.active > ul{
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+    background-color: rgba(204, 204, 204, 0.2);
+}
+
+/* MINI SIDEBAR */
+@media (min-width: 768px) {
+    /* Background floating menu */
+    .mini-sidebar .sidebar-nav #sidebarnav > li > ul {
+        background: #fefefe;
+    }
+    /* Items Hover background color */
+    .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a {
+        background: #26c6da;
+    }
+    /* Items color */
+    .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a i,
+    .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a {
+        color: #fff;
     }
 }
