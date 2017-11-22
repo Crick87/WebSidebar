@@ -53,7 +53,7 @@ Main sidebar
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
 }
 .fix-sidebar .left-sidebar {
-    position: fixed;
+    position: fixed !important;
 }
 /*******************
 Sidebar navigation
@@ -206,7 +206,7 @@ When click on sidebar toggler and also for tablet
     
     .mini-sidebar .scroll-sidebar {
         padding-bottom: 0px;
-        position: absolute;
+        /*position: absolute;*/
     }
     .mini-sidebar .hide-menu,
     .mini-sidebar .nav-small-cap,

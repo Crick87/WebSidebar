@@ -18,19 +18,6 @@ $(function() {
     $(".nav-toggler").click(function() {
         $("body").toggleClass("show-sidebar"), $(".nav-toggler i").toggleClass("ti-menu"), $(".nav-toggler i").addClass("ti-close")
     }), 
-
-
-    // $(".floating-labels .form-control").on("focus blur", function(i) {
-    //     $(this).parents(".form-group").toggleClass("focused", "focus" === i.type || this.value.length > 0)
-    // }).trigger("blur"), $(function() {
-    //     for (var i = window.location, e = $("ul#sidebarnav a").filter(function() {
-    //             return this.href == i
-    //         }).addClass("active").parent().addClass("active");;) {
-    //         if (!e.is("li")) break;
-    //         e = e.parent().addClass("in").parent().addClass("active")
-    //     }
-    // }), 
-
     
     // Set metismenu to sidebarnav
     $(function() {
@@ -45,6 +32,10 @@ $(function() {
         size: "5px",
         height: "100%",
         color: "#999"
-    })
+    }),
+
+    $(".fix-topbar .topbar").stick_in_parent({}),
+    $(".fix-sidebar .left-sidebar").stick_in_parent({});
+
 
 });
