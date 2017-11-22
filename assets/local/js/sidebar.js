@@ -19,13 +19,6 @@ $(function() {
         $("body").toggleClass("show-sidebar"), $(".nav-toggler i").toggleClass("ti-menu"), $(".nav-toggler i").addClass("ti-close")
     }), 
 
-    $(".sidebartoggler").on("click", function() {}), $(".search-box a, .search-box .app-search .srh-btn").on("click", function() {
-        $(".app-search").toggle(200)
-    }), 
-
-    $(".right-side-toggle").click(function() {
-        $(".right-sidebar").slideDown(50), $(".right-sidebar").toggleClass("shw-rside")
-    }), 
 
     // $(".floating-labels .form-control").on("focus blur", function(i) {
     //     $(this).parents(".form-group").toggleClass("focused", "focus" === i.type || this.value.length > 0)
