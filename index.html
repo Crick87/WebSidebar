@@ -11,25 +11,27 @@
  	<!-- Metismenu -->
  	<link rel="stylesheet" href="assets/metismenu/metisMenu.min.css">
  	<!-- Web Sidebar hacks -->
- 	<link rel="stylesheet" href="assets/local/css/webSidebar.css">
+ 	<!-- <link rel="stylesheet" href="assets/local/css/webSidebar.css"> -->
+ 	<!-- hack sidebar -->
+ 	<link rel="stylesheet" href="assets/local/css/sidebar.css">
  </head>
  <body>
 	<!-- Main Wrapper -->
  	<div class="main-wrapper">
  		<!-- TopBar -->
  		<header class="topbar">
-            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light" style="background-color: #4286f4;">
                 <!-- Logo -->
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">
                         <!-- Logo icon -->
                         <b>
-                            <img src="assets/local/images/logos/LogoIcon.svg" alt="Icon" class="light-logo" 
+                            <img src="assets/local/images/logos/LogoIcon.svg" alt="Icon" class="logo" 
                             style="width: 2rem" />
                         </b>
                         <!-- Logo text -->
                         <span>  
-                            <img src="assets/local/images/logos/LogoText.svg" class="light-logo" alt="Text" 
+                            <img src="assets/local/images/logos/LogoText.svg" class="logo" alt="Text" 
                             style="width: 7rem" />
                         </span> 
                     </a>
@@ -37,20 +39,20 @@
                 <div class="navbar-collapse">
                     <!-- Toggle SideBar-->
                     <ul class="navbar-nav mr-auto mt-md-0">
-                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
-                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
                     </ul>
                 </div>
             </nav>
         </header>
 
 		<!-- SideBar -->
-        <aside class="sidebar col-md-2 p-0">
+        <aside class="left-sidebar">
 			<div class="scroll-sidebar">
 				<nav class="sidebar-nav">
-			    	<ul class="metismenu" id="menu">
+			    	<ul class="" id="sidebarnav">
 			    		<li>
-			         		<a href="#" aria-expanded="false">
+			         		<a href="#" aria-expanded="false" class="active">
 			        			<i class="mdi mdi-star-circle"></i><span class="hide-menu"> Single </span>
 			        		</a>
 						</li>
@@ -114,7 +116,7 @@
 	
 
 	<!-- Jquery -->
- 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+ 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
  	<!-- Bootstrap -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
@@ -123,6 +125,8 @@
  	<!-- SlimScroll -->
  	<script src="assets/slimscroll/slimscroll.min.js"></script>
  	<!-- Web Sidebar hacks-->
- 	<script src="assets/local/js/webSidebar.js"></script>
+	<!--<script src="assets/local/js/webSidebar.js"></script> -->
+ 	<!-- hack-->
+ 	<script src="assets/local/js/sidebar.js"></script>
  </body>
  </html> 
