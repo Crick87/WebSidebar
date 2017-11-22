@@ -1,62 +1,55 @@
+body{
+    background-color: #f7f7f7;
+}
 /*******************
  Topbar
 *******************/
-
 .topbar {
     position: relative;
     z-index: 50;
     -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
 }
-
 .topbar .top-navbar {
     min-height: 70px;
     padding: 0px 15px 0 0;
 }
-
 .topbar .top-navbar .dropdown-toggle::after {
     display: none;
 }
-
 .topbar .top-navbar .navbar-header {
     line-height: 65px;
     text-align: center;
 }
-
 .topbar .top-navbar .navbar-header .navbar-brand {
     margin-right: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
 }
-
 .topbar .top-navbar .navbar-header .navbar-brand b {
     line-height: 70px;
     display: inline-block;
 }
-
 .topbar .top-navbar .navbar-nav > .nav-item > .nav-link {
     padding-left: .75rem;
     padding-right: .75rem;
     font-size: 19px;
     line-height: 50px;
 }
-
 .topbar .top-navbar .navbar-nav > .nav-item.show {
     background: rgba(0, 0, 0, 0.05);
 }
-
-
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+}
 /* Shrink logo on mini-sidebar */
 .mini-sidebar .top-navbar .navbar-header {
     width: 60px;
     text-align: center;
 }
-
-
 /*******************
 Main sidebar
 ******************/
-
 .left-sidebar {
     position: absolute;
     width: 240px;
@@ -65,41 +58,32 @@ Main sidebar
     z-index: 20;
     padding-top: 70px;
     background: #fff;
-    -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
-    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
 }
-
 .fix-sidebar .left-sidebar {
     position: fixed;
 }
-
-
 /*******************
 Sidebar navigation
 ******************/
-
 .scroll-sidebar {
     padding-bottom: 60px;
 }
-
 .collapse.in {
     display: block;
 }
-
 .sidebar-nav {
     background: #fff;
     padding: 15px;
 }
-
 .sidebar-nav ul {
     margin: 0px;
     padding: 0px;
 }
-
 .sidebar-nav ul li {
     list-style: none;
 }
-
 .sidebar-nav ul li a {
     color: #607d8b;
     padding: 8px 35px 8px 15px;
@@ -108,42 +92,33 @@ Sidebar navigation
     border-radius: 4px;
     white-space: nowrap;
 }
-
 .sidebar-nav ul li a.active,
 .sidebar-nav ul li a:hover {
     color: #26c6da;
     text-decoration:none; 
 }
-
-
 .sidebar-nav ul li>a.has-arrow:hover::after,
 .sidebar-nav ul li.active>a.has-arrow::after{
     border-color: #26c6da;
 }
-
 .sidebar-nav ul li.active>a.has-arrow:hover::after,
 .sidebar-nav ul li.active>a.has-arrow::after{
     border-color: #fff;
 }
-
 .sidebar-nav ul li a.active {
     font-weight: 500;
     color: #263238;
 }
-
 .sidebar-nav ul li ul {
     padding-left: 5px;
     padding-top: 10px;
 }
-
 .sidebar-nav ul li ul li a {
     padding: 10px 35px 10px 15px;
 }
-
 .sidebar-nav ul li ul ul {
     padding-left: 15px;
 }
-
 .sidebar-nav ul li.nav-small-cap {
     font-size: 12px;
     margin-bottom: 0px;
@@ -151,18 +126,15 @@ Sidebar navigation
     color: #263238;
     font-weight: 500;
 }
-
 .sidebar-nav ul li.nav-devider {
     height: 1px;
     background: rgba(120, 130, 140, 0.13);
     display: block;
     margin: 20px 0;
 }
-
 .sidebar-nav > ul > li {
     margin-bottom: 10px;
 }
-
 .sidebar-nav > ul > li.active > a {
     background-color: #26c6da;
     color: #fff;
@@ -170,20 +142,16 @@ Sidebar navigation
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 .sidebar-nav > ul > li.active > a i {
     color: #fff;
 }
-
 .sidebar-nav > ul > li > a.active i,
 .sidebar-nav > ul > li > a:hover i {
     color: #26c6da;
 }
-
 .sidebar-nav > ul > li.active > a:hover i {
     color: #fff;
 }
-
 .sidebar-nav > ul > li > a i {
     width: 27px;
     height: 27px;
@@ -193,22 +161,18 @@ Sidebar navigation
     vertical-align: middle;
     color: #99abb4;
 }
-
 .sidebar-nav > ul > li > a .label {
     float: right;
     margin-top: 6px;
 }
-
 .sidebar-nav > ul > li > a.active {
     font-weight: 400;
     background: #fff;
     color: #26c6da;
 }
-
 .sidebar-nav .has-arrow {
     position: relative;
 }
-
 .sidebar-nav .has-arrow::after {
     position: absolute;
     content: '';
@@ -231,7 +195,6 @@ Sidebar navigation
     -o-transition: all .3s ease-out;
     transition: all .3s ease-out;
 }
-
 .sidebar-nav .active > .has-arrow::after,
 .sidebar-nav li > .has-arrow.active::after,
 .sidebar-nav .has-arrow[aria-expanded="true"]::after {
@@ -242,12 +205,9 @@ Sidebar navigation
     width: .58em;
     transform: rotate(-135deg) translate(0, -50%);
 }
-
-
 /****************
 When click on sidebar toggler and also for tablet
 *****************/
-
 @media (min-width: 768px) {
     .mini-sidebar .sidebar-nav #sidebarnav li {
         position: relative;
@@ -322,7 +282,6 @@ When click on sidebar toggler and also for tablet
         border-color: #009efb;
     }
 }
-
 @media (max-width: 767px) {
     .mini-sidebar .left-sidebar {
         position: fixed;
@@ -336,77 +295,61 @@ When click on sidebar toggler and also for tablet
         left: 0px;
     }
 }
-
-
 /*===========================
 Bootstrap 4 hack
 ===========================*/
-
 .invisible {
     visibility: hidden !important;
 }
-
 .hidden-xs-up {
     display: none !important;
 }
-
 @media (max-width: 575px) {
     .hidden-xs-down {
         display: none !important;
     }
 }
-
 @media (min-width: 576px) {
     .hidden-sm-up {
         display: none !important;
     }
 }
-
 @media (max-width: 767px) {
     .hidden-sm-down {
         display: none !important;
     }
 }
-
 @media (min-width: 768px) {
     .hidden-md-up {
         display: none !important;
     }
 }
-
 @media (max-width: 991px) {
     .hidden-md-down {
         display: none !important;
     }
 }
-
 @media (min-width: 992px) {
     .hidden-lg-up {
         display: none !important;
     }
 }
-
 @media (max-width: 1199px) {
     .hidden-lg-down {
         display: none !important;
     }
 }
-
 @media (min-width: 1200px) {
     .hidden-xl-up {
         display: none !important;
     }
 }
-
 .hidden-xl-down {
     display: none !important;
 }
-
-
 /*============================================================== 
  For Laptop & above all (1650px) 
  ============================================================== */
-
 @media (min-width: 1650px) {
     .widget-app-columns {
         -webkit-column-count: 3;
@@ -417,12 +360,9 @@ Bootstrap 4 hack
         height: 365px !important;
     }
 }
-
-
 /*============================================================== 
  For Laptop & above all (1370px) 
  ============================================================== */
-
 @media (max-width: 1370px) {
     .widget-app-columns {
         -webkit-column-count: 2;
@@ -430,12 +370,9 @@ Bootstrap 4 hack
         column-count: 2;
     }
 }
-
-
 /*-- ============================================================== 
  Small Desktop & above all (1024px) 
  ============================================================== */
-
 @media (min-width: 1024px) {
     .page-wrapper {
         margin-left: 240px;
@@ -444,7 +381,6 @@ Bootstrap 4 hack
         left: 240px;
     }
 }
-
 @media (max-width: 1023px) {
     .page-wrapper {
         margin-left: 60px;
@@ -464,12 +400,9 @@ Bootstrap 4 hack
         width: 200px;
     }
 }
-
-
 /*-- ============================================================== 
  Ipad & above all(768px) 
  ============================================================== */
-
 @media (min-width: 768px) {
     .navbar-header {
         width: 240px;
@@ -498,12 +431,9 @@ Bootstrap 4 hack
         -webkit-flex-wrap: nowrap !important;
     }
 }
-
-
 /*-- ============================================================== 
  Phone and below ipad(767px) 
  ============================================================== */
-
 @media (max-width: 767px) {
     /*Header*/
     .topbar {
@@ -559,3 +489,4 @@ Bootstrap 4 hack
         margin-left: 0px;
         padding-top: 70px;
     }
+}
