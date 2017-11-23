@@ -235,6 +235,12 @@ When click on sidebar toggler and also for tablet
     .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a .hide-menu {
         display: inline;
     }
+    
+    /*Only if Side Search*/
+    .mini-sidebar .sidebar-nav .side-search {
+        display: none;
+    }
+
 }
 @media (max-width: 767px) {
     .mini-sidebar .left-sidebar {
