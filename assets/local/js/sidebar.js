@@ -35,7 +35,7 @@ $(function() {
     }),
 
     $(".fix-topbar .topbar").stick_in_parent({}),
-    $(".fix-sidebar .left-sidebar").stick_in_parent({});
+    $(".fix-sidebar .left-sidebar").stick_in_parent({})
 
 
 });

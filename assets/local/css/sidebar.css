@@ -206,7 +206,7 @@ When click on sidebar toggler and also for tablet
     
     .mini-sidebar .scroll-sidebar {
         padding-bottom: 0px;
-        /*position: absolute;*/
+        position: absolute;
     }
     .mini-sidebar .hide-menu,
     .mini-sidebar .nav-small-cap,
