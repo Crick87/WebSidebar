@@ -6,14 +6,14 @@
     z-index: 50;
 }
 .topbar .top-navbar {
-    min-height: 70px;
+    min-height: 49px;
     padding: 0px 15px 0 0;
 }
 .topbar .top-navbar .dropdown-toggle::after {
     display: none;
 }
 .topbar .top-navbar .navbar-header {
-    line-height: 65px;
+    line-height: 49px;
     text-align: center;
 }
 .topbar .top-navbar .navbar-header .navbar-brand {
@@ -22,7 +22,7 @@
     padding-top: 0px;
 }
 .topbar .top-navbar .navbar-header .navbar-brand b {
-    line-height: 70px;
+    line-height: 49px;
     display: inline-block;
 }
 .topbar .top-navbar .navbar-nav > .nav-item > .nav-link {
@@ -33,6 +33,10 @@
 }
 .topbar .top-navbar .navbar-nav > .nav-item.show {
     background: rgba(0, 0, 0, 0.05);
+}
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-link {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 /* Shrink logo on mini-sidebar */
 .mini-sidebar .top-navbar .navbar-header {
@@ -48,7 +52,8 @@ Main sidebar
     height: 100%;
     top: 0px;
     z-index: 20;
-    padding-top: 70px;
+    /*padding-top: 49px;*/
+    padding-top: 55px;
     -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
 }
@@ -436,7 +441,7 @@ Bootstrap 4 hack
     /*Sidebar and wrapper*/
     .mini-sidebar .page-wrapper {
         margin-left: 0px;
-        padding-top: 70px;
+        padding-top: 49px;
     }
 }
 
