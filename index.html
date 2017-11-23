@@ -37,8 +37,54 @@
                 <div class="navbar-collapse">
                     <!-- Toggle SideBar-->
                     <ul class="navbar-nav mr-auto mt-md-0">
-                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
-                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item"> 
+                        	<a class="nav-link nav-toggler hidden-md-up" href="javascript:void(0)" 
+                        	data-toggle="tooltip" data-placement="bottom" title="Toggle sidebar">
+                        		<i class="mdi mdi-menu"></i>
+                        	</a> 
+                        </li>
+                        <li class="nav-item"> 
+                        	<a class="nav-link sidebartoggler hidden-sm-down" href="javascript:void(0)" 
+                        	data-toggle="tooltip" data-placement="bottom" title="Toggle sidebar">
+                        		<i class="mdi mdi-menu"></i>
+                        	</a> 
+                        </li>
+                        
+                        <!-- Left Links -->
+                    	<li class="nav-item">
+                    		<a class="nav-link" href="javascript:void(0)" 
+                        	data-toggle="tooltip" data-placement="bottom" title="Nuevo">
+	                    		<i class="mdi mdi-plus-box"></i>
+	                    	</a>
+                    	</li>
+
+                    </ul>
+                    <ul class="navbar-nav ml-auto mt-md-0">
+                        
+                        <!-- Right Links -->
+                        <li class="nav-item">
+                        	<div class="nav-notify row align-items-center">
+                    			<span class="badge badge-pill badge-danger">3</span>
+                        	</div>
+                    	</li>
+
+                    	<li class="nav-item">
+                        	<div class="nav-search row align-items-center">
+                    			<form class="search px-2">
+				                    <div>
+				                        <input class="form-control form-control" type="text" placeholder=" Search">
+				                    </div>
+				                </form>
+                        	</div>
+                    	</li>
+
+                    	<li class="nav-item">
+                    		<a class="nav-link" href="javascript:void(0)" 
+                        	data-toggle="tooltip" data-placement="bottom" title="Buscar">
+	                    		<i class="mdi mdi-magnify"></i>
+	                    	</a>
+                    	</li>
+
                     </ul>
                 </div>
             </nav>

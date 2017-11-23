@@ -38,6 +38,12 @@
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-notify,
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-search {
+    height: 100%;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+}
 /* Shrink logo on mini-sidebar */
 .mini-sidebar .top-navbar .navbar-header {
     width: 60px;
@@ -533,4 +539,29 @@ body{
     .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a {
         color: #fff;
     }
+}
+
+/* Notifications */
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-notify > .badge {
+    font-size: 1.2rem;
+    background-color: #f44336 !important;
+}
+
+/* Search Topbar */
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-search input {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #4286f4;
+}
+/* Search Topbar PlaceHolder Text Color */
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-search .form-control::-webkit-input-placeholder { color: white; }  /* WebKit, Blink, Edge */
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-search .form-control:-moz-placeholder { color: white; }  /* Mozilla Firefox 4 to 18 */
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-search .form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-search .form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-search .form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
+
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-search input:active,
+.topbar .top-navbar .navbar-nav > .nav-item > .nav-search input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #4286f4;
+    color: #4286f4;
 }

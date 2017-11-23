@@ -34,6 +34,15 @@ $(function() {
         color: "#999"
     }),
 
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip(
+            {
+                delay: { "show": 1000, "hide": 100 },
+                trigger: 'hover'
+            }
+        )
+    }),
+
     $(".fix-topbar .topbar").stick_in_parent({}),
     $(".fix-sidebar .left-sidebar").stick_in_parent({})
 
