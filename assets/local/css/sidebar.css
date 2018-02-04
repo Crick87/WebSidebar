@@ -90,7 +90,10 @@ Sidebar navigation
     display: block;
     font-size: 15px;
     border-radius: 4px;
+
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .sidebar-nav ul li a.active,
 .sidebar-nav ul li a:hover {
